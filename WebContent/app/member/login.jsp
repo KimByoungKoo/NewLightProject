@@ -8,7 +8,6 @@
 <title>Insert title here</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/member/login.css">
-
 </head>
 <body>
 	<!-- 헤더 -->

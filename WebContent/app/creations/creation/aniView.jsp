@@ -95,7 +95,6 @@
 								data-likeNumber="${creation.getCreationNumber()}">
 								<c:if
 									test="${sessionScope.memberNumber !=  creation.getCreationNumber()}">
-
 									<c:choose>
 										<c:when test="${isLike == 0}">
 											<a href="#" class="likeplus"> <img
@@ -108,11 +107,9 @@
 											</a>
 										</c:otherwise>
 									</c:choose>
-
 								</c:if>
 								<span class="likeCount"> <c:out value="${likeCount}" />
 								</span>
-
 							</div>
 
 							<div class="creations-comment">
