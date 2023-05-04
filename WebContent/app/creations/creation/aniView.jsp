@@ -15,13 +15,14 @@
 	<%@include file="/app/header.jsp"%>
 	<form
 		action="${pageContext.request.contextPath}/creations/creationRead.ct">
+		<hr>
 		<main>
-		<input type="hidden" name="creationNumber"
+			<input type="hidden" name="creationNumber"
 				value="${creation.getCreationNumber()}">
 			<div class="main">
 				<div class="main-box-bin"></div>
 				<div class="creations-background-title">
-					<c:out value="${creation.getCreationTitle()}"/>
+					<c:out value="${creation.getCreationTitle()}" />
 				</div>
 				<div class="background-creations-main">
 					<div class="creations-info">
@@ -30,67 +31,70 @@
 								<img
 									src="${pageContext.request.contextPath}/userProfile/${creation.getMemberPfp()}"
 									alt="" class="info-people-img" />
-									</c:if>
-									<c:if test="${empty creation.getMemberPfp()}">
-									<img src="${pageContext.request.contextPath}/assets/img/member/people.png"
-							class="info-people-img">
-									</c:if>
+							</c:if>
+							<c:if test="${empty creation.getMemberPfp()}">
+								<img
+									src="${pageContext.request.contextPath}/assets/img/member/people.png"
+									class="info-people-img">
+							</c:if>
 						</div>
 						<div class="creations-author">
 							<span><c:out value="${creation.getMemberNickname()}" /></span>
 						</div>
 						<c:choose>
-						<c:when test="${isFollow == 0}">
-						<c:if
-							test="${sessionScope.memberNumber !=  creation.getMemberNumber()}">
-							<div class="follow-btn none"
-								data-memberNumber="${creation.getMemberNumber() }">
-								<a href="#" class="follower">팔로우 ✔</a>
-							</div>
-							<div class="follow-btn"
-								data-memberNumber="${creation.getMemberNumber() }">
-								<a href="#" class="follower">팔로우 +</a>
-							</div>
-						</c:if>
-						</c:when>
-						
-						<c:otherwise>
-						<div class="follow-btn"
-								data-memberNumber="${creation.getMemberNumber() }">
-								<a href="#" class="follower">팔로우 ✔</a>
-							</div>
-						<div class="follow-btn none"
-								data-memberNumber="${creation.getMemberNumber() }">
-								<a href="#" class="follower">팔로우 +</a>
-							</div>
-						</c:otherwise>
+							<c:when test="${isFollow == 0}">
+								<c:if
+									test="${sessionScope.memberNumber !=  creation.getMemberNumber()}">
+									<div class="follow-btn none"
+										data-memberNumber="${creation.getMemberNumber() }">
+										<a href="#" class="follower">팔로우 ✔</a>
+									</div>
+									<div class="follow-btn"
+										data-memberNumber="${creation.getMemberNumber() }">
+										<a href="#" class="follower">팔로우 +</a>
+									</div>
+								</c:if>
+							</c:when>
+
+							<c:otherwise>
+								<div class="follow-btn"
+									data-memberNumber="${creation.getMemberNumber() }">
+									<a href="#" class="follower">팔로우 ✔</a>
+								</div>
+								<div class="follow-btn none"
+									data-memberNumber="${creation.getMemberNumber() }">
+									<a href="#" class="follower">팔로우 +</a>
+								</div>
+							</c:otherwise>
 						</c:choose>
 					</div>
 					<div class="creations-main">
 						<div class="creations-main-content">
 							<ul class="ani-box-slide">
-						<c:forEach var="creationFile" items="${files}">
-								<li>
-									<div class="ani-slide-img">
-										<img src="${pageContext.request.contextPath}/upload/${creationFile.getFileSystemName()}" alt="" class="ani-view" />
-									</div>
-								</li>
-							</c:forEach>
+								<c:forEach var="creationFile" items="${files}">
+									<li>
+										<div class="ani-slide-img">
+											<img
+												src="${pageContext.request.contextPath}/upload/${creationFile.getFileSystemName()}"
+												alt="" class="ani-view" />
+										</div>
+									</li>
+								</c:forEach>
 							</ul>
 							<div class="prev">&lt</div>
 							<div class="next">&gt</div>
 						</div>
 					</div>
-						<div class="creations-comment-content">
-							 <span> <c:out value="${creation.getCreationContent()}" /> </span> 
-						</div>
+					<div class="creations-comment-content">
+						<span> <c:out value="${creation.getCreationContent()}" />
+						</span>
+					</div>
 					<div class="click-main">
 						<div class="click">
 							<div class="creations-like"
 								data-likeNumber="${creation.getCreationNumber()}">
 								<c:if
 									test="${sessionScope.memberNumber !=  creation.getCreationNumber()}">
-									
 									<c:choose>
 										<c:when test="${isLike == 0}">
 											<a href="#" class="likeplus"> <img
@@ -103,55 +107,63 @@
 											</a>
 										</c:otherwise>
 									</c:choose>
-									
 								</c:if>
 								<span class="likeCount"> <c:out value="${likeCount}" />
 								</span>
-								</div>
-								
+							</div>
+
 							<div class="creations-comment">
-								<img src="${pageContext.request.contextPath}/assets/img/member/reply.png"/>
-								<c:out value="${creationComment }" />
+								<img
+									src="${pageContext.request.contextPath}/assets/img/member/reply.png">
+								<span><c:out value="${creationComment}" /></span>
 							</div>
 						</div>
 
 						<div class="click-btn">
-							<div class="edit-btn">
-								<a href="${pageContext.request.contextPath}/creations/creationUpdate.ct?creationNumber=${creation.getCreationNumber()}">수정</a>
+							<c:if
+								test="${sessionScope.memberNumber == creation.getMemberNumber() }">
+								<div class="edit-btn">
+									<a
+										href="${pageContext.request.contextPath}/creations/creationUpdate.ct?creationNumber=${creation.getCreationNumber()}">수정</a>
+								</div>
+								<div class="delete-btn">
+									<a href="#">삭제</a>
+								</div>
+							</c:if>
+							<div class="list-btn"
+								data-creationNumber="${creation.getCreationNumber() }">
+								<a href="">목록</a>
 							</div>
-							<div class="delete-btn">
-								<a href="#">삭제</a>
-							</div>
-							<div class="list-btn" data-creationNumber="${creation.getCreationNumber() }">
-								<a href="${pageContext.request.contextPath}/creations/pageListOk.ct">목록</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="comment">
-					<div class="comment-input">
-						<input type="hidden" name="creationNumber"
-							value="${creation.getMemberNumber()}">
-						<div class="comment-text">
-							<textarea name="commentContent" id="content" placeholder="댓글 내용을 입력하세요."></textarea>
-						</div>
-						<div class="comment-ok-btn">
-							<button type="button" class="comment-submit commnet-btn-ok">등록</button>
-						</div>
-					</div>
 
-					<div class="comment-border">
-
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="comment">
+				<div class="comment-input">
+					<input type="hidden" name="creationNumber"
+						value="${creation.getMemberNumber()}">
+					<div class="comment-text">
+						<textarea name="commentContent" id="content"
+							placeholder="댓글 내용을 입력하세요."></textarea>
+					</div>
+					<div class="comment-ok-btn">
+						<button type="button" class="comment-submit commnet-btn-ok">등록</button>
+					</div>
+				</div>
+
+				<div class="comment-border"></div>
+			</div>
+			</div>
 	</form>
 	<%@include file="/app/footer.jsp"%>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		let memberNumber = "${sessionScope.memberNumber}";
-	</script>
-	<script src="${pagetContext.request.contextPath}/assets/js/creation/creation.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/creation/anislide.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	let memberNumber = "${sessionScope.memberNumber}";
+</script>
+<script
+	src="${pagetContext.request.contextPath}/assets/js/creation/creation.js"></script>
+<script
+	src="${pageContext.request.contextPath}/assets/js/creation/anislide.js"></script>
 </html>
