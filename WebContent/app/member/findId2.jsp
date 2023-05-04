@@ -32,6 +32,6 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</form>
+	<%@include file="/app/footer.jsp"%>
 </body>
 </html>
-<%@include file="/app/footer.jsp"%>

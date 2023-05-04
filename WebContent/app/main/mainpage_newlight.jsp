@@ -230,7 +230,7 @@
 			</div>
 		</section>
 	</form>
-
 	<%@include file="/app/footer.jsp"%>
 </body>
+
 </html>
