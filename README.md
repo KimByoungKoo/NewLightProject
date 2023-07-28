@@ -21,3 +21,4 @@ JSP + 새빛 플랫폼
 ## 😊 주요기능
 #### 로그인/회원가입 - <a href="https://github.com/cheese0312/NewLightProject/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85">상세보기</a>
 #### 마이페이지 - <a href="https://github.com/cheese0312/NewLightProject/wiki/%EB%A7%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80">상세보기</a>
+#### 관리자페이지 - <a href="https://github.com/cheese0312/NewLightProject/wiki/%EA%B4%80%EB%A6%AC%EC%9E%90-%ED%8E%98%EC%9D%B4%EC%A7%80">상세보기</a>
