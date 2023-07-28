@@ -19,3 +19,4 @@ JSP + 새빛 플랫폼
 - Devops: GitHub
 
 ## 😊 주요기능
+#### 로그인/회원가입 - <a href="https://github.com/cheese0312/NewLightProject/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85">상세보기</a>
