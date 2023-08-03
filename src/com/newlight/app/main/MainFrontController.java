@@ -26,7 +26,6 @@ public class MainFrontController extends HttpServlet{
 		
 		switch(target) {
 		case "/main/mainpageListOk.mi" :
-			System.out.println("mainpage 들어왔다!!");
 			new MainpageListOkControlller().execute(req, resp);
 			break;
 		}

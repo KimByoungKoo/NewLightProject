@@ -33,36 +33,36 @@ body {
 	align-items: center;
 	flex-direction: column;
 	align-content: center;
-	margin: 70px 0;
 }
 
 .big-box>.menu {
    display: flex;
-   font-size: 10px;
-   justify-content: space-around;
-   align-items: center;
-   height: 60px;
-   border-bottom: 3px solid #B4AEE8;
-   width: 65%;
-   list-style-type: none;
-   margin-left: 20px;
+    font-size: 10px;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* height: 60px; */
+    border-bottom: 3px solid #B4AEE8;
+    width: 65%;
+    list-style-type: none;
+    /* margin-left: 20px; */
+    padding: 0;
 }
 
 
 .small-box {
 	height: 300px;
 	width: 65%; 
-	margin-left: -20px;
 }
 
 .small-box>.table {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	list-style-type: none;
-	border-bottom: 1px solid rgb(231, 228, 228);
-	height: 40px;
-	width: 100%;
+    justify-content: space-around;
+    /* align-items: center; */
+    list-style-type: none;
+    border-bottom: 1px solid rgb(231, 228, 228);
+    /* height: 40px; */
+    width: 100%;
+    padding: 0;
 }
 
 .table>.name {
@@ -125,7 +125,6 @@ body {
 .pagination>ul {
 	display: flex;
 	list-style: none;
-	background-color: white;
 }
 
 .pagination a {

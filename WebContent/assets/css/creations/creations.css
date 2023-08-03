@@ -51,14 +51,15 @@ main {
 
 .creations-info {
 	display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 0 40px 0 40px;
 }
 
 .creations-img {
-  width: 80px;
-  height: 80px;
+  width: 55px;
+  height: 55px;
   border-radius: 70%;
   overflow: hidden;
 }
@@ -113,6 +114,7 @@ main {
   padding: 15px 0;
   padding-left: 30px;
   white-space : pre-line;
+  font-size: 23px;
 }
 
 .click-main {
@@ -199,9 +201,10 @@ main {
 }
 
 .comment-text {
-  width: 90%;
-  padding: 0 50px;
-  font-family: 'GmarketSansMedium';
+    padding: 0 10px;
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    width: 105%;
 }
 
 .comment  textarea {
@@ -215,9 +218,10 @@ main {
 }
 
 .comment-ok-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
 }
 
 .comment-ok-btn > button {
@@ -229,8 +233,9 @@ main {
 }
 
 .comment-main{
-  display: flex;
-  padding: 20px 10px 20px 30px;
+ 	display: flex;
+    padding: 20px 10px 20px 3px;
+    width: 105%;
 }
 
 .comment-border {
@@ -271,7 +276,7 @@ main {
   font-family: 'GmarketSansMedium';
   font-weight: normal;
   margin: 3px 5px;
-    padding: 5px 6px;
+    padding: 7px 9px;
     font-family: 'GmarketSansMedium';
     font-weight: normal;
 }
@@ -303,19 +308,19 @@ main {
 
 .theme-down-box {
   border: 1px solid #e0e0e0;
-  background-color: #fff;
-  padding: 12px 40px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
-  width: 350px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-around;
+    background-color: #fff;
+    padding: 12px 40px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    width: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .folder-icon {
-  bottom: 17px;
   display: flex;
-  background : white;
+    background: white;
+    align-items: center;
 }
 
 .folder-icon > img {
@@ -343,6 +348,7 @@ main {
   width: 20px;
   height: 20px;
   background: white;
+  padding : 5px 0 0 0;
 }
 
 .none {
@@ -366,4 +372,19 @@ main {
 .img-size {
 	width : 250px;
 	height : 250px;
+}
+
+.name {
+	margin: 0 0 0 10px;
+}
+
+.creations-box2 {
+	display: flex;
+    align-items: center;
+    width: 110px;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
 }
