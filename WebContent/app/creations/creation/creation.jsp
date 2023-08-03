@@ -16,18 +16,20 @@
 	<form
 		action="${pageContext.request.contextPath}/creations/creationRead.ct"
 		method="post">
-		<hr>
+<!-- 		<hr> -->
 		<main>
 			<input type="hidden" name="creationNumber" value="${creation.getCreationNumber()}">
 			<div class="main">
-				<div class="main-box-bin"></div>
+				<!-- <div class="main-box-bin"></div> -->
+				
+				<div class="background-creations-main">
 				<div class="creations-background-title">
 					<h3>
 						<c:out value="${creation.getCreationTitle()}" />
 					</h3>
 				</div>
-				<div class="background-creations-main">
 					<div class="creations-info">
+					<div class="creations-box2">
 						<div class="creations-img">
 						<c:if test="${not empty creation.getMemberPfp()}">
 							<img
@@ -38,13 +40,14 @@
 								</c:if>
 						</div>
 						<div class="creations-author">
-							<span> <c:out value="${creation.getMemberNickname()}" />
+							<span class="name"> <c:out value="${creation.getMemberNickname()}" />
 							</span>
+						</div>
 						</div>
 						<c:choose>
 						<c:when test="${isFollow == 0}">
-						<c:if
-							test="${sessionScope.memberNumber !=  creation.getMemberNumber()}">
+						<div>
+						<c:if test="${sessionScope.memberNumber !=  creation.getMemberNumber()}">
 							<div class="follow-btn none"
 								data-memberNumber="${creation.getMemberNumber() }">
 								<a href="#" class="follower">팔로우 ✔</a>
@@ -54,6 +57,7 @@
 								<a href="#" class="follower">팔로우 +</a>
 							</div>
 						</c:if>
+						</div>
 						</c:when>
 						
 						<c:otherwise>
@@ -177,10 +181,11 @@
 							value="${creation.getMemberNumber() }">
 						<div class="comment-text">
 							<textarea name="commentContent" id="content" placeholder="댓글 내용을 입력하세요."></textarea>
-						</div>
-						<div class="comment-ok-btn">
+							<div class="comment-ok-btn">
 							<button type="button" class="comment-submit commnet-btn-ok">등록</button>
 						</div>
+						</div>
+						
 					</div>
 
 					<div class="comment-border">

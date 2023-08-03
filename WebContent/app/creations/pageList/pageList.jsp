@@ -38,8 +38,6 @@
 				<!-- 창작물 메인 요소 -->
 				<div class="creations-main2">
 					<section>
-						<!--  -->
-						<%-- <c:when test="${not empty kakaoBoard}"> --%>
 							<c:forEach var="creation" items="${creationsList}">
 								<div class="img">
 									<div class="creations-img">
@@ -85,8 +83,6 @@
 									</div>
 								</div>
 							</c:forEach>
-						<%-- </c:when> --%>
-						<!--  -->
 
 					</section>
 				</div>

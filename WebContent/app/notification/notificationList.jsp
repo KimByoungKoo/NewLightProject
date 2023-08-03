@@ -23,7 +23,7 @@
 <br/>
 <br/>
 <div class="grap">
-    <div class="largetitle"><h1>공지사항</h1>
+    <div class="largetitle"><h3>공지사항</h3>
     </div>
     <div class="box"></div>
 

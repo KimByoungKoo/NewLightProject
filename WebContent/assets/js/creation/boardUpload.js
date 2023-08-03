@@ -82,11 +82,13 @@ $fileInput.on('change', function(){
 			$fileList.append(
 				`<li>
 					<div class="show-img-box">
-						<img src=${src}>
-					</div>
-					<div class="btn-box">
+					
 						<button type='button' class='img-cancel-btn' data-name='${files[i].name}'>삭제</button>
+					
+						<img src=${src}>
+						
 					</div>
+					
 				</li>`	
 			);	
 			

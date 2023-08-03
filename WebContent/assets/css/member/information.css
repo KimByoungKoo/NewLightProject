@@ -44,6 +44,7 @@ fieldset {
 .info-container {
    display: flex;
    justify-content: center;
+   margin-bottom: 50px;
 }
 
 .info-people-img {
@@ -204,15 +205,6 @@ span {
    display : flex;
    justify-content : center;
    width: 70%;
-<<<<<<< HEAD
-=======
-}
-
-.info-pw-sub {
-	display : flex;
-	justify-content : center;
-	width: 70%;
->>>>>>> ab8479668e43428f5242184af6815b5a83e4020a
 }
 
 .info-pw-sub > span {
