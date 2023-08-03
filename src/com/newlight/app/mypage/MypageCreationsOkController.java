@@ -29,8 +29,7 @@ public class MypageCreationsOkController implements Execute {
 		mypageVO.setMemberNickname(req.getParameter("memberNickname"));
 
 		mypageVO = mypageDAO.mypageinfo(memberNumber);
-		
-//		req.setAttribute("memberNumber", mypageVO.getMemberNumber());
+
 		req.setAttribute("memberPfp", mypageVO.getMemberPfp());
 		req.setAttribute("memberNickname", mypageVO.getMemberNickname());
 		req.setAttribute("memberComment", mypageVO.getMemberComment());

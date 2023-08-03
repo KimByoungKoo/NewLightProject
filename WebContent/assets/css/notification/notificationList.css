@@ -9,16 +9,28 @@ body {
 	 font-family: 'GmarketSansMedium';
 }
 
+section {
+	display: flex;
+    justify-content: space-between;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.grap {
+	width : 85%
+}
+
 
 .grap>.largetitle{
   display: flex;
   justify-content: space-between;
-  margin: 0 400px;
 }
 
 .grap>.box{
   border-bottom: 4px solid #B4AEE8;
-  margin: 0 400px;
 }
 
 .first{
@@ -28,7 +40,6 @@ body {
   align-items: center;
   font-size: 10px;
   height: 40px; 
-  margin: 0 400px;
 }
 
 .first>h2{
@@ -42,7 +53,7 @@ body {
 section>.grap>.other{
     border-bottom: 1px solid #eae9e9;
     height: 40px;
-    margin: 0 400px;
+    margin: 10px 0;
     display: flex;
     font-size: 12px;
     justify-content: space-between;
@@ -125,8 +136,7 @@ h3>a{
 
 .grap>.other2{
 	font-weight : bold;
-	margin: 300px 0;
-	font-size : 20px;
+	margin: 10px 0;
 }
 
 footer{
