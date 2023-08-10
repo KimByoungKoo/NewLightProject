@@ -66,6 +66,7 @@
 		delete from community
 		where member_number = #{memberNumber}
 	</delete>
+	
 	<delete id="delete1" parameterType="_int">
 	  delete from community where community_number = #{communityNumber}
 	</delete>

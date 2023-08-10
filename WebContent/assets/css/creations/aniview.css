@@ -1,359 +1,360 @@
 @font-face {
-	font-family: 'GmarketSansMedium';
-	src:
-		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
-		format('woff');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* *{
-	padding: 0;
-	margin : 0;
+   padding: 0;
+   margin : 0;
 } */
 
 body {
-	font-family: 'GmarketSansMedium';
+   font-family: 'GmarketSansMedium';
 }
 
 hr {
-	width: 70%;
-	color: rgb(217, 217, 217);
+  width: 70%;
+  color: rgb(217, 217, 217);
 }
 
 main {
-	/* padding-left: 50px; */
-	
+  padding-left: 50px;
 }
 
 .main {
-	display: flex;
-	justify-content: space-between;
-	width: 95%;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .background-box-bin {
-	height: 150%;
-	width: 300px;
+  height: 150%;
+  width: 300px;
 }
 
 .background-creations-main {
-	width: 60%;
-	border: 1px solid gray;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding: 10px;
+  width: 60%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.creations-background-title {
-	font-size: 1.17em;
-	font-weight: bold;
-	margin: 15px 0;
+.creations-background-title{
+   font-size: 1.17em;
+   font-weight: bold;
+   margin-bottom: 15px;
 }
 
 .main-aside {
-	width: 15%;
-	height: 100%;
-	display: flex;
-	background-color: rgb(255, 255, 245);
-	align-items: center;
-	color: white;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 245);
+  align-items: center;
+  color: white;
 }
 
 .creations-info {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-	align-items: center;
+   display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 }
 
-.creations-img>img {
-	width: 80px;
-	height: 80px;
+.creations-img > img {
+  width: 80px;
+  height: 80px;
 }
 
 .creations-author {
-	width: 70%;
+  width: 70%;
 }
 
 .follow-btn {
-	text-align: center;
-	color: gray;
+  text-align: center;
+  color : gray;
 }
 
-.follow-btn>a {
-	padding: 5px 7px;
-	/* background-color: rgb(220, 220, 220); */
-	/* border : 1px solid gray; */
-	border-radius: 5px;
-	text-decoration: none;
-	color: black;
+.follow-btn > a {
+  padding: 5px 7px;
+  /* background-color: rgb(220, 220, 220); */
+  /* border : 1px solid gray; */
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
 }
 
-.follow-btn>a:hover {
-	color: #ce97fa;
+.follow-btn > a:hover{
+   color : #ce97fa;
 }
 
 .creations-main {
-	display: block;
-	justify-content: center;
+  display: block;
+  justify-content: center;
 }
 
 .creations-main-content {
-	/* padding: 0 50px; */
-	text-align: center;
+  /* padding: 0 50px; */
+    text-align: center;
 }
 
-.creations-main-content>img {
-	padding: 15px 0;
-	width: 700px;
-	height: 350px;
+.creations-main-content > img {
+  padding: 15px 0;
+  width: 700px;
+  height: 350px;
 }
 
 .creations-comment-content {
-	padding: 15px;
-	/* padding-left: 30px; */
+  padding: 15px;
+  /* padding-left: 30px; */
 }
 
 .click-main {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .click {
-	display: flex;
-	/* justify-content: center; */
-	text-align: left;
+  display: flex;
+  /* justify-content: center; */
+  text-align: left;
 }
 
 .click-btn {
-	display: flex;
-	padding-right: 10px;
+  display: flex;
+  padding-right: 10px;
 }
 
 .click-btn a {
-	text-decoration: none;
-	color: gray;
-	padding: 0 5px;
+  text-decoration: none;
+  color: gray;
+  padding: 0 5px;
 }
 
 .creations-like {
-	display: flex;
-	padding: 0px 10px;
-	font-size: 15px;
-	align-items: center;
-	justify-content: center;
+   display: flex;
+    padding: 0px 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
-.creations-like  img {
-	width: 15px;
-	height: 15px;
-	padding: 0 5px;
+.creations-like  img{
+  width: 15px;
+  height: 15px;
+  padding: 0 5px;
 }
 
 .creations-like a {
-	text-decoration: none;
-	padding: 0 5px;
+   text-decoration: none;
+   padding: 0 5px;
 }
 
 .creations-comment {
-	display: flex;
-	padding: 0px 10px;
-	font-size: 15px;
-	align-items: center;
-	justify-content: center;
+   display: flex;
+    padding: 0px 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
-.creations-comment>img {
-	width: 17px;
-	height: 17px;
-	padding: 0 5px;
+.creations-comment > img {
+  width: 17px;
+  height: 17px;
+  padding: 0 5px;
 }
 
 .comment {
-	width: 65%;
-	padding: 20px 0;
-	padding-left: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  width: 65%;
+  padding: 20px 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .comment-input {
-	display: flex;
-	width: 90%;
-	padding-left: 50px;
-	padding-bottom: 20px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  width: 90%;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .comment-text {
-	width: 90%;
+  width: 90%;
 }
 
 .comment textarea {
-	width: 92%;
-	height: 70px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	resize: none;
-	font-family: 'GmarketSansMedium';
+  width: 92%;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: 'GmarketSansMedium';
 }
 
 .comment-ok-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.comment-ok-btn>button {
-	width: 58px;
-	height: 30px;
+.comment-ok-btn > button {
+  width: 58px;
+  height: 30px;
 }
 
 .comment-main {
-	display: flex;
-	padding: 20px 10px 20px 30px;
+  display: flex;
+  padding: 20px 10px 20px 30px;
 }
 
 .comment-border {
-	width: 95%;
-	border-radius: 7px;
+  width: 95%;
+  border-radius: 7px;
 }
 
 .comment-box {
-	display: flex;
-	width: 80%;
+  display: flex;
+  width: 80%;
 }
 
 .comment-member {
-	width: 100%;
+  width: 100%;
 }
 
 .comment-writeday {
-	width: 20%;
-	text-align: end;
+  width: 20%;
+  text-align: end;
 }
 
 .comment-btn {
-	display: flex;
-	padding: 10px;
-	width: 20%;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .none {
-	display: none;
+  display: none;
 }
 
-.comment-btn>button {
-	margin: 0 5px;
+.comment-btn > button {
+  margin: 0 5px;
 }
 
-.comment-img>img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.comment-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .comment-img {
-	width: 45px;
-	height: 45px;
-	border-radius: 70%;
-	overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border-radius: 70%;
+  overflow: hidden;
 }
 
 .comment-img-box {
-	width: 8%;
+  width: 8%;
 }
 
 /* 만화 슬라이드 css */
 .creations-main {
-	display: flex;
-	justify-content: center;
-	margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .creations-main-content {
-	width: 700px;
-	height: 350px;
-	border: 1px solid black;
-	overflow: hidden;
-	position: relative;
+  width: 700px;
+  height: 350px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
 }
 
 .ani-box-slide {
-	display: flex;
-	position: absolute;
-	left: 0;
-	padding: 0;
-	margin: 0;
+  display: flex;
+  position: absolute;
+  left: 0;
+  padding : 0;
+  margin : 0;
 }
 
 .ani-view {
-	width: 700px;
-	height: 350px;
+  width: 700px;
+  height: 350px;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 /* 만화 슬라이드 클릭버튼 */
+
 .prev {
-	left: 0;
+  left: 0;
 }
 
 .next {
-	right: 0;
+  right: 0;
 }
 
-.prev, .next {
-	font-size: 50px;
-	position: absolute;
-	top: 140px;
-	cursor: pointer;
-	color: #e3dede;
-	background-color: transparent !important;
+.prev,
+.next {
+  font-size: 50px;
+  position: absolute;
+  top: 140px;
+  cursor: pointer;
+  color: #e3dede;
+  background-color: transparent !important;
 }
 
-.prev:hover {
-	color: #8221ce;
+.prev:hover{
+   color: #8221ce;
 }
 
-.next:hover {
-	color: #8221ce;
+.next:hover{
+   color: #8221ce;
 }
 
-.edit-btn>a:hover, .delete-btn>a:hover, .list-btn>a:hover {
-	color: #ce97fa;
+.edit-btn > a:hover,
+.delete-btn > a:hover,
+.list-btn > a:hover{
+   color: #ce97fa;
 }
 
-.creations-img {
-	width: 80px;
-	height: 80px;
-	border-radius: 70%;
-	overflow: hidden;
+.creations-img{
+   width: 80px;
+    height: 80px;
+    border-radius: 70%;
+    overflow: hidden;
 }
 
-.commnet-btn-ok {
-	border: 1px solid #e3dede;
-	border-radius: 12px;
-	cursor: pointer;
-	color: #e3dede;
-	font-weight: bold;
-	font-family: 'GmarketSansMedium';
+.commnet-btn-ok{
+   border: 1px solid #e3dede;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #e3dede;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
 }
 
-.commnet-btn-ok:hover {
-	border: 1px solid #8221ce;
-	color: #8221ce;
+.commnet-btn-ok:hover{
+   border: 1px solid #8221ce;
+    color: #8221ce;
 }
