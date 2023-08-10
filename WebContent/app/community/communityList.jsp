@@ -329,11 +329,9 @@ function createDiv(height, width) {
 				</div>
 		
 	</form>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
+	<!-- 푸터 -->
+<%@include file="/app/footer.jsp"%>
 
 </body>
 </html>

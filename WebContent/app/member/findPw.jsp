@@ -6,10 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/member/findPw.css">
-
-
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/member/findPw.css">
 </head>
 <body>
 	<!-- 헤더 -->

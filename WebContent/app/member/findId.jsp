@@ -8,7 +8,6 @@
 <title>아이디 찾기</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/member/findId.css">
-
 </head>
 <body>
 	<!-- 헤더 -->

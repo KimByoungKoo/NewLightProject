@@ -33,7 +33,7 @@ public class CreationUploadOkController implements Execute{
 		String path = null;
 		
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";
-		int fileSize = 1024 * 1024 * 20;
+		int fileSize = 1024 * 1024 * 100;
 		
 		MultipartParser parser = new MultipartParser(req, fileSize);
 		parser.setEncoding("UTF-8");

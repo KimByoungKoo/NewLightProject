@@ -58,7 +58,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     width: 900px;
-    height: 900px;
+    height: auto;
     align-content: center;
 }
 

@@ -15,7 +15,7 @@
 		parameterType="map">		
 		select c.community_number, m.member_nickname,
 		community_title,
-		community_content, community_writeday,
+		community_content, date_format(community_writeday, '%Y-%m-%d') community_writeday,
 		community_read_count,
 		count(cc.comment_number) comment_count
 		from member m join community c
